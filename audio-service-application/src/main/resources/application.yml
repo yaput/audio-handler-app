@@ -1,0 +1,32 @@
+spring:
+    servlet:
+        multipart:
+            max-file-size: 10MB
+            max-request-size: 10MB
+            resolve-lazily: true
+    application:
+      name: audiohandler
+
+audio-converter:
+    bitRate: 128000
+    channels: 2
+    samplingRate: 44100
+    bufferLimit: 20480
+
+audio-metadata-mysql-config:
+    url: "jdbc:mysql://mysql/mydatabase"
+    userName: "root"
+    password: "rootpassword"
+
+s3-config:
+    bucketName: "audio-store"
+
+cloud:
+    aws:
+        region:
+            static: us-east-1
+        s3:
+            endpoint: http://localstack:4566
+        credentials:
+            access-key: test
+            secret-key: test

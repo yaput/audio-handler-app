@@ -1,0 +1,9 @@
+rootProject.name = 'audiohandler'
+include 'audio-handler-api'
+include 'audio-handler-impl'
+include 'audio-convert-api'
+include 'audio-metadata-api'
+include 'audio-convert-impl'
+include 'audio-metadata-impl'
+include 'audio-service-application'
+

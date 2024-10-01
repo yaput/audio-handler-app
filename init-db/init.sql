@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS audio_metadata (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId INT NOT NULL,
+    phraseId INT NOT NULL,
+    filePath VARCHAR(50) NOT NULL
+);
